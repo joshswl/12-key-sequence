@@ -2,9 +2,19 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Key Detection</title>
   </head>
   <body>
+    <script type="text/javascript">
+      const pressed = [];
+      const secretCode = 'joshlee';
 
+
+      window.addEventListener('keyup', (e) => {
+        console.log(e.key);
+        pressed.push(e.key);
+        console.log(pressed);
+      })
+    </script>
   </body>
 </html>
